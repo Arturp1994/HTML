@@ -3,63 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Моя страница</title>
+    <link href="CSS для новичков.css" rel="stylesheet">
 </head>
 <body>
-    <table>
-        <tr>
-            <td><img src="gerrard.jpg" width="200" alt="Photo"></td>
-            <td><h1>Steven Gerrard</h1>
-                <p><em>English professional football manager and former player</em></p>
-                <p>Manages Premier League club <strong>Aston Villa</strong></p></td>
-        </tr>
+    <div class="container">
+        <div class="info">
+        <img src="gerrard.jpg" width="200" alt="Photo" class="photo">
+        <h1>Steven Gerrard</h1>
+        <p>English professional football manager and former player</p>
+        <p>Manages Premier League club <strong>Aston Villa</strong></p>
+        </div>  
+    
+        <div class="club">
+        
+        <h4>Teams managed</h4>
 
-    </table>
- 
-    <hr>
-    <h2>Teams managed</h2>
-    <ul type = "square">
-        <li><a href = "https://www.liverpoolfc.com/" target="_blank">2017–2018	Liverpool U18 and U19</a></li>
-        <li>2018–2021	Rangers</li>
-        <li>2021–	Aston Villa</li>
-    </ul>
-    <hr>
-    <h2>National team</h2>
-    <ol>
-        <li>1999–2000	England U21</li>
-        <li>2000–2014	England</li>
-    </ol>
-    <hr>
-    <h2>Club</h2>
-    <table border="2">
-        <tr>
-            <th>Season</th>
-            <th>League</th>
-            <th>Club</th>
-        </tr>
-        <tr>
-            <td>1998-2015</td>
-            <td>Premier League</td>
-            <td>Liverpool</td>
-        </tr>
-        <tr>
-            <td>2015-2016</td>
-            <td>Major League Soccer</td>
-            <td>LA Galaxy</td>
-        </tr>
+            <a href = "https://www.liverpoolfc.com/" target="_blank">2017–2018	Liverpool U18 and U19</a>
+            <br>
+            2018–2021	Rangers
+            <br>
+            2021–	Aston Villa
 
-    </table>
-    <h2>Email</h2>
-    <form>
-        <label for="Name">Name</label>
-        <input type="email">
-        <br>
-        <br>
-        <label for="Comment">Comment</label>
-        <textarea rows="3" cols="20"></textarea>
-        <br>
-        <input type="submit" value="Here!">
-    </form>
+        </div>
+        
+        <div class="card bg-red">
+            <h2>National team</h2>
+            <ol class ='list'>
+                <li>1999–2000	England U21</li>
+                <li>2000–2014	England</li>
+            </ol>
+           
+        </div>
+        <div class="card bg-green">
+            <h2>Club</h2>
+            <table class="table">
+                <tr>
+                    <th>Season</th>
+                    <th>League</th>
+                    <th>Club</th>
+                </tr>
+                <tr>
+                    <td>1998-2015</td>
+                    <td>Premier League</td>
+                    <td>Liverpool</td>
+                </tr>
+                <tr>
+                    <td>2015-2016</td>
+                    <td>Major League Soccer</td>
+                    <td>LA Galaxy</td>
+                </tr>
 
+            </table>
+        </div>
+        <div class="form-group">
+            <div class="card bg-yellow">
+                <h2>Email</h2>
+                <form>
+                    <label for="Name">Name</label>
+                    <input type="email">
+                    <br>
+                    <br>
+                    <label for="Comment">Comment</label>
+                    <textarea rows="3" cols="20"></textarea>
+                    <br>
+                    <input type="submit" value="Here!">
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
